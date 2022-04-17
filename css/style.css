@@ -57,14 +57,17 @@ li a {
 .section-title,
 .topic-was-created .content-title,
 .video-section__btn {
-    font-family: 'Roboto';
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .video-section__btn,
 .submit-bar__detail img,
 .submit-bar #send,
 .topic-was-created .create-topic,
-.interactive-container {
+.interactive-container,
+.create-topic-btn,
+.question-expanded,
+.summary__content {
     cursor: pointer;
 }
 
@@ -91,7 +94,7 @@ body,
 .author-coautor-format h6,
 .topic-was-created .create-topic,
 .user-info .select-language {
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
 
 .main-header__content h2,
@@ -322,7 +325,7 @@ body,
 }
 
 .create-topic-btn {
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     font-size: 15px;
     border-radius: 5px;
     border: none;
