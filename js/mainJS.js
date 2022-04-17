@@ -6,7 +6,7 @@
     var $resumoMinimizado = document.querySelector(".summary__text");
     var $resumoExpandido = document.querySelectorAll(".invisible-text");
     var arrResumo = [$resumoMinimizado, $resumoExpandido];
-    
+
     $resumoContainer.addEventListener('click', function () {
         toggleInvisible($resumoMinimizado);
         var contador = 0;
@@ -78,12 +78,12 @@
     var $transformaItalico = document.querySelector("#btn-italico");
     $transformaNegrito.addEventListener('click', negrito)
     $transformaItalico.addEventListener('click', italico)
-   
-    function negrito(){
+
+    function negrito() {
         $campoDeTexto.classList.toggle('fw900');
     }
 
-    function italico(){
+    function italico() {
         $campoDeTexto.classList.toggle('italico');
     }
 
