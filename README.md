@@ -3,7 +3,7 @@ Página que foi proposta para os candidatos a desenvolvedores front-end na Chuva
 
 Nesse projeto eu usei a biblioteca reset.css, eu criei dois arquivos css, um arquivo para o css inicial (segundo os conceitos de mobile first) e outro para a versão desktop. Eu usei uma pasta para armazenar aqruivos JS e outra pasta para armazenar as imagens.
 
-Algumas das funcionalidades desse site:
+Lista de funcionalidades da página:
 
 1. Minimizar e expandir resumo
 2. Criar múltiplos tópicos
