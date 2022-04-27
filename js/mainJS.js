@@ -2,14 +2,13 @@
 
     //abre e fecha resumo
 
-    var $resumoContainer = document.querySelector(".summary__content");
-    var $resumoMinimizado = document.querySelector(".summary__text");
-    var $resumoExpandido = document.querySelectorAll(".invisible-text");
-    var arrResumo = [$resumoMinimizado, $resumoExpandido];
+    const $resumoContainer = document.querySelector(".summary__content");
+    const $resumoMinimizado = document.querySelector(".summary__text");
+    const $resumoExpandido = document.querySelectorAll(".invisible-text");
 
     $resumoContainer.addEventListener('click', function () {
         toggleInvisible($resumoMinimizado);
-        var contador = 0;
+        let contador = 0;
         while (contador < $resumoExpandido.length) {
             toggleInvisible($resumoExpandido[contador]);
             contador++;
@@ -22,12 +21,12 @@
 
     //abre e fecha as perguntas dos usuários
 
-    var $perguntaContainer = document.querySelector('.interactive-container');
-    var $perguntaExpandida = document.querySelector('.question-expanded');
+    const $perguntaContainer = document.querySelector('.interactive-container');
+    const $perguntaExpandida = document.querySelector('.question-expanded');
 
     $perguntaContainer.addEventListener('click', function () {
         toggleInvisible($perguntaContainer);
-        toggleInvisible($perguntaExpandida)
+        toggleInvisible($perguntaExpandida);
     });
 
     $perguntaExpandida.addEventListener('click', function () {
@@ -37,18 +36,18 @@
 
     // Criando tópicos
 
-    var $criarTopicoInicial = document.querySelector('.discussions__share-ideas');
-    var $criandoTopico = document.querySelector('#creating-topic');
-    var $assuntoTopico = document.querySelector('#assunto');
-    var $conteudoTopico = document.querySelector('#new-question__content');
-    var $btnEnviarTopico = document.querySelector('#send');
-    var $containerTopicoCriado = document.querySelector('.topic-was-created');
-    var $criandoTopicov2 = document.querySelector('#create-topic-v2');
-    var $criandoTopicoV2Detalhe = document.querySelector('.limit-container');
+    const $criarTopicoInicial = document.querySelector('.discussions__share-ideas');
+    const $criandoTopico = document.querySelector('#creating-topic');
+    const $assuntoTopico = document.querySelector('#assunto');
+    const $conteudoTopico = document.querySelector('#new-question__content');
+    const $btnEnviarTopico = document.querySelector('#send');
+    const $containerTopicoCriado = document.querySelector('.topic-was-created');
+    const $criandoTopicov2 = document.querySelector('#create-topic-v2');
+    const $criandoTopicoV2Detalhe = document.querySelector('.limit-container');
 
     $criarTopicoInicial.addEventListener('click', function () {
-        toggleInvisible($criarTopicoInicial)
-        toggleInvisible($criandoTopico)
+        toggleInvisible($criarTopicoInicial);
+        toggleInvisible($criandoTopico);
     })
 
     $btnEnviarTopico.addEventListener('click', function () {
@@ -60,9 +59,9 @@
     $criandoTopicov2.addEventListener('click', criandoTopicoNovamente);
     function criandoTopicoNovamente() {
         limpandoTopicoAnterior();
-        toggleInvisible($containerTopicoCriado)
-        toggleInvisible($criandoTopicoV2Detalhe)
-        toggleInvisible($criandoTopico)
+        toggleInvisible($containerTopicoCriado);
+        toggleInvisible($criandoTopicoV2Detalhe);
+        toggleInvisible($criandoTopico);
     }
 
     /*É necessário limpar os inputs do meu form para que o novo tópico não tenha
@@ -73,11 +72,11 @@
         $conteudoTopico.value = "";
     }
 
-    var $campoDeTexto = document.querySelector('#new-question__content')
-    var $transformaNegrito = document.querySelector("#btn-negrito");
-    var $transformaItalico = document.querySelector("#btn-italico");
-    $transformaNegrito.addEventListener('click', negrito)
-    $transformaItalico.addEventListener('click', italico)
+    const $campoDeTexto = document.querySelector('#new-question__content');
+    const $transformaNegrito = document.querySelector("#btn-negrito");
+    const $transformaItalico = document.querySelector("#btn-italico");
+    $transformaNegrito.addEventListener('click', negrito);
+    $transformaItalico.addEventListener('click', italico);
 
     function negrito() {
         $campoDeTexto.classList.toggle('fw900');
